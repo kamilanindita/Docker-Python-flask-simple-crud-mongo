@@ -1,0 +1,29 @@
+version: "3.7"
+
+services:
+  mongodb:
+    container_name: mongodb
+    image: mongo:4.1
+    ports:
+      - 27017:27017
+    networks:
+      - project_flask
+  app_project:
+    container_name: FlaskAppMongo
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: projectflaskmongo:1.0
+    ports:
+      - 5000:5000
+    links:
+      - mongodb
+    depends_on:
+      - mongodb
+    networks:
+      - project_flask
+
+networks:
+  project_flask:
+    name: project_flask
+
