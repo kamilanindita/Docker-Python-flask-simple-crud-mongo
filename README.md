@@ -6,7 +6,7 @@ ___
 
 #### 1. Clone <a href="https://github.com/kamilanindita/python-flask-simple-crud-mongodb">python-flask-simple-crud-mongodb</a>
 
-#### 2. Masukan file (Dockerfile dan docker-compose) ke dalam directory utama(root) 
+#### 2. Masukan file (Dockerfile, docker-compose dan requirements.txt) ke dalam directory utama(root) 
 
 #### 3. Settings  konfigurasi db
 ![Image of DB](https://drive.google.com/uc?export=view&id=1jJoH9IZqXj1c7naE4h_bkK760UWqsBzp)
